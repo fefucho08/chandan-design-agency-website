@@ -5,3 +5,96 @@
     margin: 0;
     padding: 0;
 }
+
+footer {
+    background-color: #03071b;
+    padding: 60px 135px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+footer a:link,
+footer a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer h3 {
+    font-size: 20px;
+}
+
+footer > p {
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+    align-self: baseline;
+}
+
+footer .socialMedia {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+footer .socialMedia > img {
+    max-width: 70px;
+}
+
+footer .socialMedia ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    font-size: 24px;
+}
+
+footer .contact > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+footer .explore {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+footer .subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+footer .subscribe #emailNews {
+    min-height: 48px;
+    max-height: 85px;
+    padding: 15px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #7b7c82;
+    border-radius: 6px;
+    color: #fff;
+}
+
+footer .subscribe > p {
+    font-size: 13px;
+}
+
+footer .subscribeBtn {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    max-width: fit-content;
+    padding: 13px 26px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4361ee;
+    color: #fff;
+    font-weight: 700;
+}
