@@ -10,10 +10,6 @@
     font-size: 15px;
 }
 
-img {
-    width: 100px;
-}
-
 h1,
 h2 {
     font-size: 1.4rem;
@@ -36,7 +32,6 @@ header {
 }
 
 section {
-    padding: 70px 20px;
 }
 
 p {
@@ -120,6 +115,7 @@ header .hamburgerMenu {
     flex-flow: column wrap;
     align-items: center;
     text-align: center;
+    padding: 70px 20px;
     gap: 30px;
 }
 
@@ -144,12 +140,13 @@ header .hamburgerMenu {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 70px 20px;
 }
 
 .servicesGallery {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
     gap: 20px;
 }
 
@@ -217,6 +214,10 @@ header .hamburgerMenu {
     margin-top: 40px;
 }
 
+.clientsSection {
+    padding: 70px 20px;
+}
+
 .previousQuote,
 .nextQuote {
     display: none;
@@ -248,4 +249,203 @@ section.contactSection {
 
 .contactContainer {
     background-color: #e9f4ff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.contactInformation {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.infoCard {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.infoCard h3 {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.infoCard p:last-child {
+    width: 100%;
+    margin-left: 58px;
+    color: #4f5863;
+}
+
+.infoCard img {
+    width: 40px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 17px;
+}
+
+.contactSection form {
+    width: 100%;
+    border-radius: 15px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background-color: #fff;
+    position: relative;
+    top: 50px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.04);
+}
+
+.contactSection form input {
+    background-color: transparent;
+    border: 1px solid #e2e7ed;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.blogSection {
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.blogGallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.blogCard {
+    background-color: #e9f4ff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.blogCard:nth-child(n + 3) {
+    display: none;
+}
+
+.blogCard img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.blogCard h3,
+.blogCard a {
+    font-weight: 400;
+    margin: 0 20px;
+}
+
+.blogCard a:link,
+.blogCard a:visited {
+    color: #4361ee;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+footer {
+    background-color: #03071b;
+    padding: 30px 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    color: #fff;
+    gap: 40px;
+}
+
+footer a:link,
+footer a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer h3 {
+    font-size: 20px;
+}
+
+footer > p {
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+    align-self: baseline;
+}
+
+footer .socialMedia {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    order: -2;
+}
+
+footer .socialMedia > img {
+    max-width: 70px;
+    min-width: 62px;
+}
+
+footer .socialMedia ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    font-size: 24px;
+}
+
+footer .contact > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+footer .explore {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+footer .subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    order: -1;
+}
+
+footer .subscribe #emailNews {
+    min-height: 48px;
+    max-height: 85px;
+    padding: 15px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #7b7c82;
+    border-radius: 6px;
+    color: #fff;
+}
+
+footer .subscribe > p {
+    font-size: 13px;
+}
+
+footer .subscribeBtn {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    max-width: fit-content;
+    padding: 13px 26px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4361ee;
+    color: #fff;
+    font-weight: 700;
 }
