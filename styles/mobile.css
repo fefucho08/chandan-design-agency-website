@@ -5,3 +5,247 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    font-size: 15px;
+}
+
+img {
+    width: 100px;
+}
+
+h1,
+h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    padding: 70px 20px;
+}
+
+p {
+    line-height: 170%;
+}
+
+button {
+    padding: 16px 34px;
+    border: none;
+    background-color: #4361ee;
+    border-radius: 8px;
+    font-size: 1.12rem;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    max-width: fit-content;
+}
+
+section:nth-child(odd) {
+    background: #e9f4ff;
+}
+
+header .logoContainer {
+    width: 60px;
+}
+
+header .logoContainer img {
+    width: 100%;
+}
+
+header .hamburgerMenu {
+    font-size: 30px;
+}
+
+.highlight {
+    border-bottom: 3px solid #4361ee;
+}
+
+.introSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.titleContainer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.introSection .imageContainer {
+    width: 75%;
+    position: relative;
+    top: 44px;
+    z-index: 0;
+}
+
+.imageContainer img:first-child {
+    width: 100%;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.imageContainer .dots {
+    position: absolute;
+    z-index: -1;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.descriptionSection {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.descriptionSection .upperText {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.descriptionSection .mainContent img {
+    width: 90%;
+}
+
+.descriptionSection .mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    color: #4f5863;
+}
+
+.servicesSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicesGallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.servicesCard {
+    padding: 10px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    position: relative;
+    z-index: 0;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 6px;
+    background-color: #000;
+    gap: 10px;
+}
+
+.backgroundImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 6px;
+    opacity: 0.3;
+}
+
+.servicesCard:nth-child(n + 5) {
+    display: none;
+}
+
+.serviceIcon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.serviceIcon h3 {
+    font-size: 1rem;
+}
+
+.serviceIcon img {
+    width: 20px;
+    background-color: #e9f4ff;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.servicesCard a:link,
+.servicesCard a:visited {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.servicesSection button {
+    margin-top: 40px;
+}
+
+.previousQuote,
+.nextQuote {
+    display: none;
+}
+
+.clientQuote {
+    background-color: #f4f6fe;
+    border-radius: 15px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    color: #4f5863;
+}
+
+.clientQuote img:first-child {
+    width: 90%;
+}
+
+.quotationMarks {
+    width: 15%;
+}
+
+section.contactSection {
+    background-color: #fff;
+}
+
+.contactContainer {
+    background-color: #e9f4ff;
+}
