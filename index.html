@@ -6,8 +6,8 @@
         <title>Chandan Design</title>
 
         <!-- <link rel="stylesheet" href="./styles/desktop.css" /> -->
-        <link rel="stylesheet" href="./styles/mobile.css" />
-        <!-- <link rel="stylesheet" href="./styles/tablet.css" /> -->
+        <!-- <link rel="stylesheet" href="./styles/mobile.css" /> -->
+        <link rel="stylesheet" href="./styles/tablet.css" />
 
         <!-- FONT AWESOME IMPORT -->
         <script
@@ -21,6 +21,7 @@
         </style>
     </head>
     <body>
+        <!-- --------------------------- header-section --------------------------------- -->
         <header>
             <div class="logoContainer">
                 <img src="./assets/image/logo.png" alt="Chandan Design Logo" />
@@ -28,6 +29,7 @@
             <div class="hamburgerMenu"><i class="fa-solid fa-bars"></i></div>
         </header>
         <main>
+            <!-- ---------------------------- intro-section ---------------------------------- -->
             <section class="introSection">
                 <div class="titleContainer">
                     <h1>
@@ -43,10 +45,12 @@
                     <img
                         src="./assets/image/woman.jpg"
                         alt="Image of a woman"
+                        class="image-woman"
                     />
                     <img src="./assets/image/dots.png" alt="" class="dots" />
                 </div>
             </section>
+            <!-- ---------------------------------- description-section -------------------------------------------- -->
             <section class="descriptionSection">
                 <div class="upperText">
                     <h2>
@@ -74,22 +78,27 @@
                         />
                     </svg> -->
                     <img src="./assets/image/team.png" alt="" />
-                    <p>
-                        We believe that a strong brand is the cornerstone of
-                        every successful business. We are a passionate team of
-                        branding experts dedicated to helping businesses like
-                        yours create a unique and compelling brand identity.
-                    </p>
-                    <p>
-                        With our extensive experience and deep understanding of
-                        brand strategy, design, and storytelling, we collaborate
-                        closely with our clients to craft brand experiences that
-                        resonate with their target audience. Our goal is to
-                        create brands that not only capture attention but also
-                        foster trust, loyalty, and recognition.
-                    </p>
+                    <div class="mainParagraph">
+                        <p>
+                            We believe that a strong brand is the cornerstone of
+                            every successful business. We are a passionate team
+                            of branding experts dedicated to helping businesses
+                            like yours create a unique and compelling brand
+                            identity.
+                        </p>
+                        <p>
+                            With our extensive experience and deep understanding
+                            of brand strategy, design, and storytelling, we
+                            collaborate closely with our clients to craft brand
+                            experiences that resonate with their target
+                            audience. Our goal is to create brands that not only
+                            capture attention but also foster trust, loyalty,
+                            and recognition.
+                        </p>
+                    </div>
                 </div>
             </section>
+            <!-- ---------------------------- service-section ------------------------------------- -->
             <section class="servicesSection">
                 <h2>Our <span class="highlight">Services</span></h2>
                 <div class="servicesGallery">
@@ -218,10 +227,14 @@
                     View More <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </section>
+            <!-- ---------------------------------- client-section --------------------------------------- -->
             <section class="clientsSection">
-                <h2>
-                    Happy <span class="highlight">stories</span> of our clients
-                </h2>
+                <div>
+                    <h2>
+                        Happy<span class="highlight"> stories</span> of our
+                        clients
+                    </h2>
+                </div>
                 <div class="clientsGallery">
                     <button class="previousQuote">
                         <i class="fa-solid fa-angle-left"></i>
@@ -239,7 +252,11 @@
                                 fill="#B4D5F6"
                             />
                         </svg> -->
-                        <img src="./assets/image/client.png" alt="" />
+                        <img
+                            src="./assets/image/client.png"
+                            alt="clientimg"
+                            class="clientimage"
+                        />
                         <img
                             src="./assets/image/quotes.png"
                             alt=""
@@ -260,8 +277,11 @@
                     </button>
                 </div>
             </section>
+            <!-- -------------------------------------- contact-section --------------------------------------- -->
             <section class="contactSection">
-                <h2><span class="highlight">Contact</span> us today</h2>
+                <div class="contactSection-titleContainer">
+                    <h2><span class="highlight">Contact</span> us today</h2>
+                </div>
                 <div class="contactContainer">
                     <div class="contactInformation">
                         <div class="infoCard">
@@ -269,83 +289,109 @@
                                 src="./assets/image/icon/location.png"
                                 alt=""
                             />
-                            <h3>Office Address</h3>
-                            <p>66 Road Broklyn Street, 600</p>
+                            <div class="insideinfoCard">
+                                <h3>Office Address</h3>
+                                <p>66 Road Broklyn Street, 600</p>
+                            </div>
                         </div>
                         <div class="infoCard">
                             <img src="./assets/image/icon/call.png" alt="" />
-                            <h3>Contact No</h3>
-                            <p>(509) 562-1912</p>
+                            <div class="insideinfoCard">
+                                <h3>Contact No</h3>
+
+                                <p>(509) 562-1912</p>
+                            </div>
                         </div>
                         <div class="infoCard">
                             <img src="./assets/image/icon/sms.png" alt="" />
-                            <h3>Email</h3>
-                            <p>contact@creativedesign.com</p>
+                            <div class="insideinfoCard">
+                                <h3>Email</h3>
+                                <p>contact@creativedesign.com</p>
+                            </div>
                         </div>
                     </div>
-                    <form action="">
-                        <label for="nameInput">Name*</label>
-                        <input
-                            type="text"
-                            name="name"
-                            id="nameInput"
-                            placeholder="Your name here"
-                            required
-                        />
-                        <label for="emailInput">Email*</label>
-                        <input
-                            type="email"
-                            name="email"
-                            id="emailInput"
-                            placeholder="Your email here"
-                            required
-                        />
-                        <label for="companyInput">Company name</label>
-                        <input
-                            type="text"
-                            name="company"
-                            id="companyInput"
-                            placeholder="Company name"
-                        />
-                        <label for="phoneInput">Phone no*</label>
-                        <input
-                            type="tel"
-                            name="phone"
-                            id="phoneInput"
-                            placeholder="Phone no"
-                            required
-                        />
-                        <button type="submit">
-                            Submit<i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </form>
+                    <div class="containerForm">
+                        <form action="">
+                            <label for="nameInput">Name*</label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="nameInput"
+                                placeholder="Your name here"
+                                required
+                            />
+                            <label for="emailInput">Email*</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="emailInput"
+                                placeholder="Your email here"
+                                required
+                            />
+                            <label for="companyInput">Company name</label>
+                            <input
+                                type="text"
+                                name="company"
+                                id="companyInput"
+                                placeholder="Company name"
+                            />
+                            <label for="phoneInput">Phone no*</label>
+                            <input
+                                type="tel"
+                                name="phone"
+                                id="phoneInput"
+                                placeholder="Phone no"
+                                required
+                            />
+                            <button type="submit">
+                                Submit<i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </section>
+            <!-- ------------------------------------ blog-section --------------------------------- -->
             <section class="blogSection">
-                <h2>Stay <span class="highlight">updated</span> with blogs</h2>
+                <div class="blogTitle">
+                    <h2>
+                        Stay <span class="highlight">updated</span> with blogs
+                    </h2>
+                </div>
                 <div class="blogGallery">
                     <div class="blogCard">
                         <img src="./assets/image/blog/blog1.jpg" alt="" />
-                        <h3>Basic rule of running web agency business</h3>
-                        <a href="#"
-                            >Read more <i class="fa-solid fa-arrow-right"></i
-                        ></a>
+                        <div class="blogCard-container">
+                            <h3>Basic rule of running web agency business</h3>
+                            <a href="#"
+                                >Read more
+                                <i class="fa-solid fa-arrow-right"></i
+                            ></a>
+                        </div>
                     </div>
                     <div class="blogCard">
                         <img src="./assets/image/blog/blog2.jpg" alt="" />
-                        <h3>Understanding different types of Marketing data</h3>
-                        <a href="#"
-                            >Read more <i class="fa-solid fa-arrow-right"></i
-                        ></a>
+                        <div class="blogCard-container">
+                            <h3>
+                                Understanding different types of Marketing data
+                            </h3>
+                            <a href="#"
+                                >Read more
+                                <i class="fa-solid fa-arrow-right"></i
+                            ></a>
+                        </div>
                     </div>
                     <div class="blogCard">
                         <img src="./assets/image/blog/blog3.jpg" alt="" />
-                        <h3>
-                            Understanding the users need to grow your business
-                        </h3>
-                        <a href="#"
-                            >Read more <i class="fa-solid fa-arrow-right"></i
-                        ></a>
+                        <div class="blogCard-container">
+                            <h3>
+                                Understanding the users need to grow your
+                                business
+                            </h3>
+                            <a href="#"
+                                >Read more
+                                <i class="fa-solid fa-arrow-right"></i
+                            ></a>
+                        </div>
                     </div>
                 </div>
                 <button class="viewBtn">
@@ -353,6 +399,7 @@
                 </button>
             </section>
         </main>
+        <!-- -------------------------------- footer-section ------------------------------------ -->
         <footer>
             <div class="socialMedia">
                 <img src="./assets/image/logo.png" alt="Chandan Design Logo" />
@@ -382,15 +429,18 @@
             <div class="contact">
                 <h3>Contact</h3>
                 <div>
-                    <img src="./assets/image/icon/location.png" alt="" />
+                    <img
+                        src="./assets/image/icon-another/location.png"
+                        alt=""
+                    />
                     <span>66 Road Brooklyn Street, 600</span>
                 </div>
                 <div>
-                    <img src="./assets/image/icon/call.png" alt="" />
+                    <img src="./assets/image/icon-another/call.png" alt="" />
                     <span>(509) 562-1912</span>
                 </div>
                 <div>
-                    <img src="./assets/image/icon/sms.png" alt="" />
+                    <img src="./assets/image/icon-another/sms.png" alt="" />
                     <span>contact@creativedesign.com</span>
                 </div>
             </div>

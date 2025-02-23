@@ -284,14 +284,17 @@ section.contactSection {
     max-width: 45%;
 }
 
-.infoCard h3 {
+.insideinfoCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.insideinfoCard h3 {
     font-weight: 400;
     font-size: 1.4rem;
 }
 
-.infoCard p:last-child {
-    width: 100%;
-    margin-left: 58px;
+.insideinfoCard p {
     color: #4f5863;
 }
 
@@ -303,8 +306,12 @@ section.contactSection {
     margin-right: 17px;
 }
 
-.contactSection form {
+.containerForm {
     width: 85%;
+}
+
+.contactSection form {
+    width: 100%;
     border-radius: 15px;
     padding: 30px 20px;
     display: flex;
