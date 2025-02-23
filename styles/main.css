@@ -12,7 +12,7 @@
 
 h1,
 h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 600;
     text-align: center;
 }
@@ -24,7 +24,7 @@ h2 {
 header {
     width: 100%;
     background-color: #fff;
-    padding: 60px;
+    padding: 20px;
     padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
@@ -48,6 +48,7 @@ button {
     align-items: center;
     gap: 6px;
     max-width: fit-content;
+    z-index: 3;
 }
 
 section:nth-child(odd) {
@@ -72,9 +73,9 @@ header .hamburgerMenu {
 
 .introSection {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    padding: 60px;
+    padding: 40px 20px;
     padding-bottom: 12px;
     position: relative;
 }
@@ -82,16 +83,12 @@ header .hamburgerMenu {
 .titleContainer {
     display: flex;
     flex-flow: column wrap;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
 }
 
-.titleContainer h1 {
-    text-align: left;
-}
-
 .introSection .imageContainer {
-    width: 80%;
+    width: 75%;
     position: relative;
     top: 44px;
     z-index: 0;
@@ -116,7 +113,7 @@ header .hamburgerMenu {
     flex-flow: column wrap;
     align-items: center;
     text-align: center;
-    padding: 60px;
+    padding: 70px 20px;
     gap: 30px;
 }
 
@@ -126,14 +123,13 @@ header .hamburgerMenu {
 }
 
 .descriptionSection .mainContent img {
-    width: 50%;
+    width: 90%;
 }
 
 .descriptionSection .mainContent {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: left;
     gap: 30px;
     color: #4f5863;
 }
@@ -142,13 +138,13 @@ header .hamburgerMenu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px;
+    padding: 70px 20px;
 }
 
 .servicesGallery {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -197,7 +193,6 @@ header .hamburgerMenu {
 .serviceIcon img {
     width: 20px;
     background-color: #e9f4ff;
-    padding: 4px;
     border-radius: 4px;
 }
 
@@ -217,24 +212,12 @@ header .hamburgerMenu {
 }
 
 .clientsSection {
-    padding: 60px;
-}
-
-.clientsGallery {
-    display: flex;
-    align-items: center;
-    gap: 26px;
+    padding: 70px 20px;
 }
 
 .previousQuote,
 .nextQuote {
-    padding: 12px;
-    font-size: 1.7rem;
-    color: #000;
-    border-radius: 100%;
-    aspect-ratio: 1/1;
-    background-color: #f4f6fe;
-    font-weight: 200;
+    display: none;
 }
 
 .clientQuote {
@@ -249,12 +232,12 @@ header .hamburgerMenu {
     color: #4f5863;
 }
 
-.clientQuote img:first-child {
-    width: 60%;
+.clientQuote > img:first-child {
+    width: 90%;
 }
 
 .quotationMarks {
-    width: 5%;
+    width: 15%;
 }
 
 section.contactSection {
@@ -265,14 +248,12 @@ section.contactSection {
     background-color: #e9f4ff;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 60px;
-    padding-bottom: 30px;
+    padding: 40px 20px;
 }
 
 .contactInformation {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 30px;
 }
 
@@ -281,7 +262,6 @@ section.contactSection {
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
-    max-width: 45%;
 }
 
 .insideinfoCard {
@@ -301,13 +281,12 @@ section.contactSection {
 .infoCard img {
     width: 40px;
     background-color: #fff;
-    padding: 10px;
     border-radius: 4px;
     margin-right: 17px;
 }
 
 .containerForm {
-    width: 85%;
+    width: 100%;
 }
 
 .contactSection form {
@@ -331,7 +310,7 @@ section.contactSection {
 }
 
 .blogSection {
-    padding: 60px;
+    padding: 70px 20px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -340,6 +319,7 @@ section.contactSection {
 
 .blogGallery {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -379,14 +359,14 @@ section.contactSection {
 
 footer {
     background-color: #03071b;
-    padding: 50px 60px;
+    padding: 30px 20px;
     padding-bottom: 20px;
     font-size: 16px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     color: #fff;
-    gap: 100px;
+    gap: 40px;
 }
 
 footer a:link,
@@ -400,6 +380,7 @@ footer h3 {
 }
 
 footer > p {
+    margin-top: 60px;
     width: 100%;
     text-align: center;
     align-self: baseline;
@@ -407,7 +388,7 @@ footer > p {
 
 footer .socialMedia {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: 30px;
     order: -2;
 }
@@ -470,4 +451,253 @@ footer .subscribeBtn {
     background-color: #4361ee;
     color: #fff;
     font-weight: 700;
+}
+
+/* TABLETS */
+
+@media screen and (min-width: 768px) {
+    h1,
+    h2 {
+        font-size: 2rem;
+    }
+
+    header {
+        padding: 60px;
+    }
+
+    .introSection {
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 60px;
+    }
+
+    .titleContainer {
+        align-items: flex-start;
+    }
+
+    .titleContainer h1 {
+        text-align: left;
+    }
+
+    .introSection .imageContainer {
+        width: 80%;
+        top: 90px;
+    }
+
+    .imageContainer .dots {
+        bottom: 75%;
+    }
+
+    .descriptionSection {
+        padding: 60px;
+    }
+
+    .descriptionSection .mainContent img {
+        width: 50%;
+    }
+
+    .descriptionSection .mainContent {
+        text-align: left;
+    }
+
+    .servicesSection {
+        padding: 60px;
+    }
+
+    .servicesGallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .clientsSection {
+        padding: 60px;
+    }
+
+    .clientsGallery {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+    }
+
+    .previousQuote,
+    .nextQuote {
+        display: flex;
+        padding: 12px;
+        font-size: 1.7rem;
+        color: #000;
+        border-radius: 100%;
+        aspect-ratio: 1/1;
+        background-color: #f4f6fe;
+        font-weight: 200;
+    }
+
+    .clientQuote > img {
+        width: 60%;
+    }
+
+    .quoteContent > img {
+        width: 10%;
+    }
+
+    .contactContainer {
+        justify-content: center;
+        padding: 60px;
+        padding-bottom: 30px;
+    }
+
+    .contactInformation {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .infoCard {
+        max-width: 45%;
+    }
+
+    .containerForm {
+        width: 85%;
+    }
+
+    .blogSection {
+        padding: 60px;
+    }
+
+    .blogGallery {
+        flex-wrap: nowrap;
+    }
+
+    footer {
+        padding: 50px 60px;
+        gap: 100px;
+    }
+
+    footer > p {
+        margin-top: 0;
+    }
+
+    footer .socialMedia {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h1,
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    .introSection {
+        gap: 20px;
+        margin-bottom: 90px;
+        padding: 60px 135px;
+    }
+
+    .introSection .imageContainer {
+        width: 90%;
+    }
+
+    .imageContainer .dots {
+        width: 30%;
+        right: 75%;
+    }
+
+    .descriptionSection {
+        padding: 60px 135px;
+    }
+
+    .descriptionSection .upperText {
+        width: 60%;
+    }
+
+    .descriptionSection .mainContent {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .descriptionSection .mainContent img {
+        width: 35%;
+    }
+
+    .descriptionSection .mainParagraph {
+        width: 60%;
+    }
+
+    .descriptionSection .mainParagraph > p:last-child {
+        margin-top: 20px;
+    }
+
+    .servicesSection {
+        padding: 60px 135px;
+    }
+
+    .servicesGallery {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .servicesCard:nth-child(n + 5) {
+        display: flex;
+    }
+
+    .clientsSection {
+        padding: 60px 135px;
+    }
+
+    .clientQuote {
+        flex-direction: row;
+    }
+
+    .clientQuote > img {
+        width: 100%;
+    }
+
+    .quoteContent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .quoteContent > img {
+        width: 5%;
+    }
+
+    .contactContainer {
+        padding: 60px 135px;
+        padding-bottom: 0;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .contactInformation {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .infoCard {
+        max-width: 100%;
+    }
+
+    .containerForm {
+        width: 50%;
+    }
+
+    .blogSection {
+        padding: 60px 135px;
+    }
+
+    .blogCard:nth-child(n + 3) {
+        display: flex;
+    }
+
+    footer {
+        padding: 60px 135px;
+        padding-bottom: 20px;
+        justify-content: space-between;
+    }
+
+    footer .subscribe {
+        order: 0;
+    }
 }
