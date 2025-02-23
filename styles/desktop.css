@@ -5,3 +5,525 @@
     margin: 0;
     padding: 0;
 }
+
+.highlight {
+    border-bottom: 3px solid #4361ee;
+}
+
+html {
+    height: auto !important;
+}
+
+/* ----------------------------- header ----------------------------------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 135px;
+}
+
+header .logoContainer {
+    display: flex;
+    width: 70px;
+    height: 70px;
+}
+
+header .hamburgerMenu i {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+/* ------------------------------ intro-section ---------------------------------------- */
+
+.introSection {
+    background-color: #e9f4ff;
+    width: 100%;
+    height: 623px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.titleContainer h1 {
+    position: absolute;
+    width: 561px;
+    height: 206px;
+    top: 161px;
+    left: 135px;
+    text-align: left;
+    font-size: 52px;
+    font-weight: bold;
+    color: #1a2630;
+}
+
+.introSection .titleContainer h1 span {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1.5px;
+}
+
+.introSection .titleContainer h1 span img {
+    width: 140px;
+    height: 1.8px;
+}
+
+.introSection .image-woman {
+    width: 531px;
+    height: 576px;
+    border-radius: 10px;
+    display: flex;
+    position: absolute;
+    right: 135px;
+    top: 70px;
+    z-index: 99;
+}
+
+.introSection .dots {
+    position: absolute;
+    z-index: 0;
+    width: 126px;
+    height: 126px;
+    top: 46px;
+    right: 569px;
+}
+
+.introSection button {
+    position: absolute;
+    top: 407px;
+    left: 135px;
+    width: 167px;
+    height: 54px;
+    background-color: #4361ee;
+    border-radius: 8px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    padding: 16px 34px;
+}
+
+/* ------------------------------- description-section ----------------------------------- */
+
+.descriptionSection {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.descriptionSection .upperText {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    text-align: center;
+    width: 100%;
+}
+
+.upperText > h2 {
+    padding-top: 137px;
+    font-size: 44px;
+    font-weight: bold;
+    color: #1a2630;
+}
+
+.upperText p {
+    padding: 0px 246px 60px 246px;
+    font-weight: 500;
+    color: #1a2630;
+}
+
+.descriptionSection .mainContent {
+    display: flex;
+    flex-direction: row;
+    gap: 56px;
+}
+
+.descriptionSection .mainContent img {
+    height: 381px;
+    width: 411px;
+    margin-left: 168px;
+}
+
+.descriptionSection .mainContent .mainParagraph {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 674px;
+    height: 292px;
+    padding-top: 44px;
+    font-size: 18px;
+    font-weight: 200;
+    color: #4f5863;
+}
+
+/* --------------------------------- service-section ---------------------------------- */
+
+/* --------------------------------- client-section ----------------------------------------- */
+
+.clientsSection {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+    height: 821px;
+}
+
+.clientsSection div {
+    display: flex;
+    justify-content: center;
+}
+
+.clientsSection h2 {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    width: 594px;
+    height: 58px;
+    padding-bottom: 80px;
+}
+
+.clientsSection .clientsGallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.clientsSection .clientsGallery button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #1a2630;
+    background-color: #f4f6fe;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.clientsSection .clientsGallery .clientQuote {
+    position: relative;
+    background-color: #f4f6fe;
+    width: 970px;
+    height: 383px;
+    border-radius: 12px;
+}
+
+.clientQuote .clientimage {
+    position: absolute;
+    width: 288px;
+    height: 269.88px;
+    top: 58px;
+    left: 40px;
+}
+
+.clientQuote .quotationMarks {
+    position: absolute;
+    width: 38px;
+    height: 31px;
+    top: 64px;
+    left: 391px;
+}
+
+.clientQuote p {
+    position: absolute;
+    width: 539px;
+    height: 170px;
+    top: 115px;
+    left: 391px;
+    color: #4f5863;
+    line-height: 170%;
+    font-size: 18px;
+}
+
+/* ------------------------------ contact-section --------------------------------- */
+
+.contactSection {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.contactSection .contactSection-titleContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.contactSection .contactSection-titleContainer h2 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.contactSection .contactContainer {
+    display: flex;
+    width: 100%;
+    height: 568px;
+    background-color: #e9f4ff;
+    flex-direction: row;
+    position: relative;
+}
+
+.contactSection .contactContainer .contactInformation {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: absolute;
+    width: 288px;
+    height: 290px;
+    top: 142px;
+    left: 135px;
+}
+
+.infoCard .insideinfoCard {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5.5px;
+}
+
+.contactInformation .infoCard {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.infoCard img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.infoCard h3 {
+    color: #1a2630;
+    font-size: 18px;
+}
+
+.infoCard p {
+    color: #4f5863;
+    font-size: 12px;
+}
+
+.contactContainer .containerForm {
+    position: absolute;
+    width: 570px;
+    height: 564px;
+    border-radius: 12px;
+    top: 60px;
+    left: 735px;
+    background-color: #ffffff;
+    padding: 40px 49px 40px 40px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactContainer .containerForm form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contactContainer .containerForm form input {
+    height: 48px;
+    border-radius: 6px;
+    border: 0.5px solid #e2e7ed;
+}
+
+.containerForm form button {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    max-width: fit-content;
+    padding: 13px 26px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4361ee;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* ---------------------------- blog-secrtion --------------------------------- */
+
+.blogSection {
+    display: flex;
+    width: 100%;
+    height: 921px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogSection .blogTitle {
+    text-align: center;
+    display: block;
+    padding-top: 186px;
+    padding-bottom: 77px;
+}
+
+.blogSection .blogTitle h2 {
+    font-size: 42px;
+    color: #1a2630;
+    font-weight: bold;
+}
+
+.blogSection .blogGallery {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.blogSection .blogGallery .blogCard {
+    width: 370px;
+    height: 366px;
+    border-radius: 10px;
+    background-color: #e9f4ff;
+    z-index: inherit;
+}
+
+.blogGallery .blogCard img {
+    width: 100%;
+    height: 57.4%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.blogCard .blogCard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.blogCard .blogCard-container h3 {
+    padding: 24px 30px 0px 30px;
+    color: #1a2630;
+    font-size: 18px;
+}
+
+.blogCard .blogCard-container a {
+    text-decoration: none;
+    padding-left: 30px;
+    font-weight: 400;
+}
+
+.blogSection .viewBtn {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    max-width: fit-content;
+    padding: 13px 26px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4361ee;
+    color: #fff;
+    font-weight: 700;
+    justify-content: center;
+}
+
+/* --------------------------- footer-section ----------------------------- */
+
+footer {
+    background-color: #03071b;
+    padding: 60px 135px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+footer a:link,
+footer a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer h3 {
+    font-size: 20px;
+}
+
+footer > p {
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+    align-self: baseline;
+}
+
+footer .socialMedia {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+footer .socialMedia > img {
+    max-width: 70px;
+}
+
+footer .socialMedia ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    font-size: 24px;
+}
+
+footer .contact > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+footer .explore {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+footer .subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+footer .subscribe #emailNews {
+    min-height: 48px;
+    max-height: 85px;
+    padding: 15px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #7b7c82;
+    border-radius: 6px;
+    color: #fff;
+}
+
+footer .subscribe > p {
+    font-size: 13px;
+}
+
+footer .subscribeBtn {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    max-width: fit-content;
+    padding: 13px 26px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4361ee;
+    color: #fff;
+    font-weight: 700;
+}
