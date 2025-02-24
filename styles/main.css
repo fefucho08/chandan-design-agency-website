@@ -213,6 +213,10 @@ header .hamburgerMenu {
 
 .clientsSection {
     padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
 .previousQuote,
@@ -238,6 +242,22 @@ header .hamburgerMenu {
 
 .quotationMarks {
     width: 15%;
+}
+
+.sliderDots {
+    display: flex;
+    gap: 10px;
+}
+
+.slide {
+    width: 8px;
+    height: 8px;
+    background-color: #edeff9;
+    border-radius: 100%;
+}
+
+#currentSlide {
+    background-color: #1a2630;
 }
 
 section.contactSection {
@@ -580,10 +600,17 @@ footer .subscribeBtn {
     }
 }
 
+/* DESKTOP */
+
 @media screen and (min-width: 992px) {
     h1,
     h2 {
         font-size: 2.8rem;
+    }
+
+    header {
+        padding: 20px 135px;
+        padding-bottom: 30px;
     }
 
     .introSection {
